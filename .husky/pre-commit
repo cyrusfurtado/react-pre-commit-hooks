@@ -1,4 +1,15 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+if command -v detect-secrets &> /dev/null
+then
+    echo "Scanning for secrets. Refer to README for details."
+    detect-secrets scan --update .secrets.baseline --exclude-files "package-lock.json|.*test.*|.*mock.*"
+    detect-secrets audit --report --fail-on-unaudited --fail-on-live --fail-on-audited-real --omit-instructions .secrets.baseline
+    git restore .secrets.baseline
+else
+    echo "Need to install \"detect-secrets\". Follow the README instructions."
+    exit 1
+fi
+
 npx lint-staged
