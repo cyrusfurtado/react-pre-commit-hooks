@@ -2,8 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const password = 'mylocalpassowrd';
-  console.log(password);
+  // const password = 'mylocalpassowrd'; // pragma: allowlist secret
+  // console.log(password);
 
   return (
     <div className="App">
