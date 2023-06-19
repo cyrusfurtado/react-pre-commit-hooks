@@ -12,7 +12,8 @@ script:
   - npm test
 jobs:
   include: 
-    - name: "Format"
+    - stage: "Lint and Format"
+      name: "Format"
       script: npm run format
     - name: "Lint"
       script: npm run lint:fix
