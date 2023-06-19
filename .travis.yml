@@ -12,6 +12,7 @@ script:
   - npm run format
   - npm run lint:fix
   - npm test
+  - npm run build
 # jobs:
 #   include: 
 #     - stage: "Lint and Format"
