@@ -9,11 +9,13 @@ install:
   - npm install
 before_script:
 script:
+  - npm run format
+  - npm run lint:fix
   - npm test
-jobs:
-  include: 
-    - stage: "Lint and Format"
-      name: "Format"
-      script: npm run format
-    - name: "Lint"
-      script: npm run lint:fix
+# jobs:
+#   include: 
+#     - stage: "Lint and Format"
+#       name: "Format"
+#       script: npm run format
+#     - name: "Lint"
+#       script: npm run lint:fix
