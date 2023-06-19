@@ -21,9 +21,6 @@
     "eject": "react-scripts eject"
   },
   "lint-staged": {
-    "**/*.{js,jsx,ts,tsx,css,scss,sass}": [
-      "npm run format"
-    ],
     "**/*.{js,jsx,ts,tsx}": [
       "npm run lint:fix"
     ]
