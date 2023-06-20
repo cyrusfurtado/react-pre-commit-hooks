@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+[![Build Status](https://app.travis-ci.com/cyrusfurtado/react-pre-commit-hooks.svg?branch=main)](https://app.travis-ci.com/cyrusfurtado/react-pre-commit-hooks)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
