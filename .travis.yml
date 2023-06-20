@@ -13,8 +13,7 @@ script:
   - npm run test
   - npm run build
   - if [ $TRAVIS_BRANCH = "main" ] && [ $TRAVIS_PULL_REQUEST = "false" ]; then 
-    docker build -t cyrusfurtado/react-app:0.0.1 .; 
-    docker push cyrusfurtado/react-app:0.0.1; fi
+    docker build -t cyrusfurtado/react-app:0.0.1 .; fi
 # jobs:
 #   include: 
 #     - stage: "Lint and Format"
