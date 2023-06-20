@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import MyComponent from './my-component';
 
 function App() {
   // const password = 'mylocalpassowrd'; // pragma: allowlist secret
@@ -20,6 +21,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <MyComponent>Hi there from my component</MyComponent>
     </div>
   );
 }
